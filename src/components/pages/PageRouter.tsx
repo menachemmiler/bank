@@ -6,7 +6,7 @@ import Transaction from "./Transaction";
 const PageRouter = () => {
   return (
     <Routes>
-      <Route index element={<Home />} />
+      <Route path="home" element={<Home />} />
       <Route path="credit" element={<Credit />} />
       <Route path="Transaction" element={<Transaction />} />
     </Routes>

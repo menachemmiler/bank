@@ -5,7 +5,7 @@ export default function ({ children }: PropsWithChildren) {
   const isLogin = localStorage.getItem("isLogin");
   if (!isLogin) {
     console.log("לא מורשה !");
-    return <Navigate to="/" />;
+    return <Navigate to="/auth" />;
   } else {
     return children;
   }
