@@ -5,7 +5,6 @@ const Login = () => {
   const navigate = useNavigate(); //מחלקה שאחראית על הניתובים
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
-  // const [showPas, setShowPas] = useState<boolean>(false);
 
   const handleLogin = () => {
     if (!username || !password) {
@@ -27,15 +26,17 @@ const Login = () => {
       <div className="form">
         <input
           value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          onChange={(e) => {setUsername(e.target.value)}}
           type="text"
           placeholder="username"
+          onKeyDown={(e) => {e.key == "Enter" && handleLogin()}}
         />
         <input
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           type="password"
           placeholder="password"
+          onKeyDown={(e) => {e.key == "Enter" && handleLogin()}}
         />
         <div className="aligh-left">
           {/* <input
