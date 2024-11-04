@@ -19,7 +19,7 @@ const Login = () => {
       return;
     }
     localStorage.setItem("isLogin", "true");
-    navigate("/pages"); //פונקצייה שמקבלת נתיב כפרמטר ומעביר אותו לנתיב
+    navigate("/pages/home"); //פונקצייה שמקבלת נתיב כפרמטר ומעביר אותו לנתיב
   };
   return (
     <div>

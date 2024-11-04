@@ -10,9 +10,8 @@ export default function NavBar() {
       <NavLink to={"/pages/Transaction"}>Transaction</NavLink>
       <button
         onClick={() => {
-          alert("Cd");
           localStorage.setItem("isLogin", "");
-          navigate("/auth"); // כאן השתמש ב-navigate
+          navigate("/auth"); 
         }}
       >
         Log Out

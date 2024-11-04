@@ -53,7 +53,7 @@ a.active {
   color: aqua;
 }
 
-a {
+a ,button{
   background-color: #34745c; /* Green */
   border: none;
   color: white;
